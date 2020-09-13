@@ -1,0 +1,145 @@
+<ion-header>  
+  <ion-toolbar color="light">  
+    <ion-buttons slot="end">  
+      <ion-menu-button color="primary"></ion-menu-button>   
+    </ion-buttons>  
+    <ion-title color="primary">  
+      ANIMATION
+    </ion-title>  
+  </ion-toolbar>   
+</ion-header>
+
+<div>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button ngSelected="selected" value="kittens">
+      Set1
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Set 2
+    </ion-segment-button>
+    <ion-segment-button value="peeps">
+      Set 3
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list ngSelected="selected" *ngSwitchCase="'puppies'">
+    <ion-item >
+      <ion-card class="vibrate-1">
+        <ion-card-header style="font: bold; color: blue;">
+          vibrate
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-list   *ngSwitchCase="'puppies'">
+    <ion-item >
+      <ion-card class="jello-horizontal">
+        <ion-card-header style="font: bold; color: blue;">
+          jello
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-list *ngSwitchCase="'puppies'">
+    <ion-item >
+      <ion-card class="puff-in-center">
+        <ion-card-header style="font: bold; color: blue;">
+          puff-in-center
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list  *ngSwitchCase="'peeps'">
+    <ion-item >
+      <ion-card class="vibrate-1">
+        <ion-card-header style="font: bold; color: blue;">
+          vibrate
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-list   *ngSwitchCase="'peeps'">
+    <ion-item >
+      <ion-card class="flicker-out-1 ">
+        <ion-card-header style="font: bold; color: blue;">
+          flicker-out
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-list *ngSwitchCase="'peeps'">
+    <ion-item >
+      <ion-card class="roll-out-left">
+        <ion-card-header style="font: bold; color: blue;">
+          roll-out-left
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list  *ngSwitchCase="'kittens'">
+    <ion-item >
+      <ion-card class="vibrate-1">
+        <ion-card-header style="font: bold; color: blue;">
+          vibrate
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-list   *ngSwitchCase="'kittens'">
+    <ion-item >
+      <ion-card class="jello-horizontal">
+        <ion-card-header style="font: bold; color: blue;">
+          jello
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-list *ngSwitchCase="'kittens'">
+    <ion-item >
+      <ion-card class="puff-in-center">
+        <ion-card-header style="font: bold; color: blue;">
+          puff-in-center
+        </ion-card-header>
+        <ion-card-content>
+          The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</div>
+
+<ion-content>
+  
+</ion-content>

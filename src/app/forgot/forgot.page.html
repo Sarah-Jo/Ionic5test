@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="primary">FORGOT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-title style="padding-top: 10px;" color="primary">Reset your password</ion-title>
+    <ion-item>
+      <div>
+      <ion-label position="floating">
+        <ion-icon style="padding-right: 10px;" name="mail-outline" item-start></ion-icon>
+        Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </div>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="primary" expand="block">RESET</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <small style="padding: 10px; text-align: center;">
+      Please provide the email address that you used when you signed
+      up for your account.
+    </small>
+  </form>
+</ion-content>

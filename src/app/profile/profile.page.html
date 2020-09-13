@@ -1,0 +1,62 @@
+<ion-header>  
+  <ion-toolbar color="light">  
+    <ion-buttons slot="end">  
+      <ion-menu-button color="primary"></ion-menu-button>   
+    </ion-buttons>  
+    <ion-title color="primary" style="font:bold;">  
+      PROFILE
+    </ion-title>  
+  </ion-toolbar>   
+</ion-header>
+
+
+<ion-content class="container">
+  <h5 style="padding: 35px;">  Profile details  </h5>
+  <ion-card >
+    <ion-card-content>
+      <button ion-item>
+        <ion-icon style="padding-right: 10px;" name="person-outline"> item-start</ion-icon>
+        Sarah
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <button ion-item>
+        <ion-icon style="padding-right: 10px;" name="people-outline">" item-start</ion-icon>
+        NTA
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <button ion-item>
+        <ion-icon style="padding-right: 10px;" name="mail-outline" item-start></ion-icon>
+        sarahjoelle@yahoo.com
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <button ion-item>
+        <ion-icon style="padding-right: 10px;" name="call-outline" item-start></ion-icon>
+        679 111 015
+      </button>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="['/profile']" type="submit" color="primary" expand="block">
+        <ion-icon style="padding: 10px;" name="create-outline" outine item-start></ion-icon>
+        Edit Profile</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="['/sign-in']" color="light" style="border-color: peru; border-style:double; border-radius: 4px;" type="submit" expand="block">
+        <ion-icon style="padding: 10px; color: peru;" name="log-in" item-start></ion-icon>
+        Sign Out</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

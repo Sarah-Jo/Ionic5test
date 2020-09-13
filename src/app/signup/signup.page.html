@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="primary">SIGN UP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">
+        <ion-icon style="padding-right: 10px;" name="person-outline" item-start></ion-icon>
+        First name</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">
+        <ion-icon style="padding-right: 10px;" name="people-outline" item-start></ion-icon>
+        Last name</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">
+        <ion-icon style="padding-right: 10px;" name="mail-outline" item-start></ion-icon>
+        Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">
+        <ion-icon style="padding-right: 10px;" name="lock-closed-outline" item-start></ion-icon>
+        Password</ion-label> 
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/profile']" type="submit" color="primary" expand="block">
+          <ion-icon style="padding-right: 10px;" name="log-in-outline" item-start>
+          </ion-icon>Sign Up</ion-button>
+      </ion-col>
+    </ion-row>
+    <a [routerLink]="['/sign-in']" class="small-text" slot="end">Already have an account? Sign in here...</a>
+  </form>
+</ion-content>

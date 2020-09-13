@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="primary">RESTAURANT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [options] ="slideopts" [scrollEvents]="true"
+(ionScrollStart)="logScrollStart()"
+(ionScroll)="logScrolling($event)"
+(ionScrollEnd)="logScrollEnd()">
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+  
+  <ion-scroll direction="x" class="wide-as-needed">
+    <ion-list >
+      <ion-item>
+  <ion-slides pager="true" autoplay="5000">
+    <ion-slide style=" height: 200px;">
+     <ion-card style="background-image: url(../assets/img/img6.jpg)">
+      <p style="text-align:unset; font-size:x-large; color: black;">Get your pizza ! </p>
+     </ion-card>
+    </ion-slide>
+  
+    <ion-slide style=" height: 200px;">
+      <ion-card style= "background-image: url(../assets/img/img3.jpg)">
+        <p style="text-align:unset; font-size:x-large; color: black;">Get your burger ! </p>
+      </ion-card>
+    </ion-slide>
+  
+    <ion-slide style=" height: 200px;">
+      <ion-card style="background-image: url(../assets/img/img5.jpg)">
+        <p style="text-align:unset; font-size:x-large; color: black;">Get your sandwich ! </p>
+      </ion-card>
+    </ion-slide>  
+  </ion-slides>
+</ion-item>
+</ion-list>
+</ion-scroll>
+
+  <p style="padding-right: 10px;">Popular menu<br> popular food menu for you each day</p>
+  <ion-scroll direction="x" class="wide-as-needed">
+  <ion-list >
+    <ion-item>
+      <ion-card>
+        <ion-card-header>
+          <img src="../assets/img/img5.jpg" />
+        </ion-card-header>
+        <ion-card-content>
+          <p  style="size: 20px; font: bold; color: navy;">Algellato coffee</p>
+          <p>Best place to visit</p>
+          <img src="../assets/img/5stars.jpg" style="width:7%" />
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <img src="../assets/img/img5.jpg" />
+        </ion-card-header>
+        <ion-card-content>
+          <p  style="size: 20px; font: bold; color: navy;">Algellato coffee</p>
+          <p>Best place to visit</p>
+          <img src="../assets/img/5stars.jpg" style="width:7%" />
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <img src="../assets/img/img5.jpg" />
+        </ion-card-header>
+        <ion-card-content>
+          <p  style="size: 20px; font: bold; color: navy;">Algellato coffee</p>
+          <p>Best place to visit</p>
+          <img src="../assets/img/5stars.jpg" style="width:7%" />
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-scroll>
+
+<ion-list>
+  <ion-item style="padding: 10px;">
+    <h4 style="padding-right: 70%;">PROMOTIONS</h4>
+    <button style="color: blue;" ion-button clear item-end>See More...</button>
+  </ion-item>
+</ion-list>
+
+  <ion-slides pager paginationType=“bullets”  style="width: 60%;">
+  <ion-slide >
+    <ion-card>
+      <ion-card-header>
+        <img src="../assets/img/img5.jpg" />
+      </ion-card-header>
+      <ion-card-content>
+        <p  style="size: 20px; font: bold; color: navy;">Algellato coffee</p>
+        <p>Best place to visit</p>
+        <img src="../assets/img/5stars.jpg" style="width:7%" /><h6 style="color: black;">-FCFA 500</h6>
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-card >
+      <ion-card-header>
+        <img src="../assets/img/img4.jpg" />
+      </ion-card-header>
+      <ion-card-content>
+        <p style="size: 20px; font: bold; color: navy;">Algellato coffee</p>
+        <p>Best place to visit</p>
+        <img src="../assets/img/5stars.jpg" style="width:7%"/><h6 style="color: black;">-FCFA 500</h6>
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+    <ion-slide>
+      <ion-card >
+        <ion-card-header>
+          <img src="../assets/img/img5.jpg" />
+        </ion-card-header>
+        <ion-card-content>
+          <p style="size: 20px; font: bold; color: navy;">Algellato coffee</p>
+          <p>Best place to visit</p>
+          <img src="../assets/img/5stars.jpg" style="width:7%" /><h6 style="color: black;">-FCFA 500</h6>
+        </ion-card-content>
+      </ion-card>  
+    </ion-slide>
+  
+</ion-slides>
+</ion-content>

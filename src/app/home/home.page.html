@@ -1,20 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
+  <ion-header>  
+    <ion-toolbar color="primary">  
+      <ion-buttons slot="end">  
+        <ion-menu-button></ion-menu-button>   
+      </ion-buttons>  
+      <ion-title>  
+        Empty State
+      </ion-title>  
+    </ion-toolbar>   
   </ion-header>
+  <div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      CIRCLE
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      OUTLINE
+    </ion-segment-button>
+    <ion-segment-button value="peeps">
+      FILL
+    </ion-segment-button>
+  </ion-segment>
+    
+</div>
+<div class="segm" [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'puppies'">
+    <ion-title >
+      Welcome!<br> 
+      This is an empty segment...
+    </ion-title>
+  </ion-list>
+</div>
+<div class="segm" [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'kittens'">
+    <ion-title >
+      Welcome!<br> 
+      This is an empty segment...
+    </ion-title>
+  </ion-list>
+</div>
+<div class="segm" [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'peeps'">
+    <ion-title >
+      Welcome!<br> 
+      This is an empty segment...
+    </ion-title>
+  </ion-list>
+</div>
+
+<ion-content>
+  
 </ion-content>

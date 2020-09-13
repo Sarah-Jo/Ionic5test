@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="primary">SIGN IN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p style="padding: 25px;">Sign in to continue</p>
+  <form>
+     
+    <ion-item lines="full">
+      <div class="item-content">  
+      <ion-label position="floating">
+        <ion-icon style="padding-right: 10px;" name="mail-outline" item-start></ion-icon>
+        Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </div>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">
+        <ion-icon style="padding-right: 10px;" name="lock-closed-outline" item-start></ion-icon>
+        Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <a [routerLink]="['/forgot']" class="small-text" slot="end">Forgot Password?</a>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/profile']" type="submit" color="primary" expand="block">
+          <ion-icon style="padding-right: 10px;" name="log-in" item-start></ion-icon>
+          Sign In</ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/signup']" style="border-color: peru; border-style:double; border-radius: 4px;"  type="submit" color="light" expand="block">
+          <ion-icon style="padding-right: 10px; color: peru;" name="create-outline" outine item-start></ion-icon>
+          Create new user </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-label style="padding-top: 40px;" position="floating">By  clicking Sign In, you agree to the following Terms and Conditions without reservation</ion-label>
+  </form>
+</ion-content>

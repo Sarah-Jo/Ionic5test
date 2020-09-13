@@ -1,0 +1,18 @@
+:root { 
+    --ion-safe-area-top: 25px; 
+    --ion-safe-area-bottom: 27px; 
+    } 
+    .swiper-slide { 
+    display: block; 
+    } 
+    ion-slides{
+        ion-slide {
+          width: 100% !important;
+    
+          ion-card{
+            height: 90%;
+            width: 100%;
+        }
+      }
+    }
+    
